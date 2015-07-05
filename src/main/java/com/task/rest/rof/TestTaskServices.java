@@ -14,12 +14,13 @@ public class TestTaskServices {
 
 
 	public  static int taskId = -1;
+	
 	@Test 
 	public void testListTasks(){
 		RestAssured.baseURI = "http://localhost";
         RestAssured.port = 9090;
         RestAssured.basePath = "/RESTfulExample/rest/task";
-        Response resp = given().post("/list");
+        Response resp = given().get("/list/all");
         Assert.assertEquals(200, resp.getStatusCode());
 	}
 	

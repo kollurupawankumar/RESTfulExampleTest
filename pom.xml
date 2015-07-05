@@ -16,7 +16,7 @@
 			<artifactId>groovy</artifactId>
 			</exclusion>
 		</exclusions>
-		<scope>test</scope>
+		<scope>compile</scope>
 	</dependency>
 	
 	<dependency>
